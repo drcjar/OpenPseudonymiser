@@ -1,0 +1,88 @@
+﻿1.1.0
+First recorded release. Uses a text file for settings
+
+1.2.0
+27 June 2011
+Changed text file to use internal resources so users cannot change settings
+Added "all except:" special case in settings for output rows
+Fixed a bug on loading in QAdmin mode
+Built three versions (Test, HES and QAdmin) and deployed to Stat4 for JHC to test
+
+1.3.0
+27 June 2011
+Solved the "close window, process keeps running bug".
+
+1.3.1
+27 June 2011
+Cleaned up build warnings
+
+1.4.0
+1 July 2011
+Added date processing and a help screen
+
+1.5.0
+29 July 2011
+Added ability to add own salt, based on a a resource entry (AllowSaltEntry: true)
+Also moved default salt to a resource entry (DefaultSalt: xxxxxx)
+
+1.5.1
+1 Aug 2011
+Fixed error accessing salt box on wrong thread
+
+
+0.9.0
+9 Sept 2011
+ - Reset Version to sync with JHC request
+ - App use the current directory (ie that for the input file) as the default for the output file (and continue with the option to change to another directory)
+ - When it has finished changes the finish button to a close button
+ - CryptoLib created and object made non static so we can just create one and call it's methods throughtout the processing. Negative the need to duplicate the code in the DLL and inside the WPF app for speed
+ (although I've not done the speed tests yet)
+ - Date processing improved and moved into the CyptoLib
+
+
+0.9.1
+11 Sept 2011
+ - Tweaks to 0.9.0 as mailed by JHC
+ - Single app now allows settings file optional
+
+
+0.9.2
+11 Sept 2011
+ - Changed assembly information and copyright notice
+ 
+
+0.9.3
+13 Sept 2011
+ - Save settings file by date and time
+ - Hid the licence windows instead of closing it, winXP crashed but Win7 was fine with closing..
+
+
+0.9.4
+29 Sept 2011
+ - built against dll 0.9.4 (no blank salt allowed)
+ 
+ 
+0.9.5
+28 Oct 2011
+Optionally validate NHSNumber (checksum)
+Built against Crypto dll 0.9.5 (Changed NHS Number processessor to eliminate everything but ascii chars 0-9)
+Fixed row count bug
+
+
+0.9.6
+15 Nov 2011
+Fixed NHSNUmber validation so it can now validate NHSNumbers that are not part of the output..
+
+
+0.9.7
+01 Feb 2012
+ - Added simple splash screen to improved perceived cold start time (when the .net framework is not loaded on the machine)
+ - Added App.Config and a setting to override the cert revocation check which will be slowing startup by 15 secs (timeout) on non internet enabled machines
+ - We now ask whether their data contains an NHSNumber, (new drop down on page 2) if so we will always do NHSProcessing and validation on it
+ - Display validation of NHS count on the output screen allows cancel if the data looks duff early in the process
+ - Built against CryptoLib 0.9.6 (this includes the change to always remove blanks from any field used in the digest)
+ - Display missing rows on progress and show a hyperlink to the output folder
+
+
+
+

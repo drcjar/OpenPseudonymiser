@@ -1,0 +1,12 @@
+﻿<Window x:Class="HashValidator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QCrypt Output Config Hash Validator" Height="444" Width="583">
+    <Grid>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="28,348,0,0" Name="textBox2" VerticalAlignment="Top" Width="508" />
+        <Button Content="Create Hash" Height="23" HorizontalAlignment="Left" Margin="240,324,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <TextBox Height="298" HorizontalAlignment="Left" Margin="32,24,0,0" Name="textBox1" VerticalAlignment="Top" Width="504" TextWrapping="Wrap"
+VerticalScrollBarVisibility="Visible"
+AcceptsReturn="True" Text="Copy everything from the config file up to and including the JaggedLines row. Then add a line break and press the button to generate a hash the same way the QCrypt tool does" />
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+
+
+0.9.7
+01 Feb 2012
+    (first version that started recording changes in a version.txt file)
+ -  Always remove blanks from any field used in the digest
+ 
+

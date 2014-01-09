@@ -1,0 +1,10 @@
+﻿<Window x:Class="OpenPseudonymiser.Licence" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="OpenPseudonymiser Licence" Height="440" Width="609">
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" Height="294" Margin="2,54,-2,54">
+            <TextBlock Name="textBlock1" Text="" VerticalAlignment="Top" Width="563" TextWrapping="Wrap" />
+        </ScrollViewer>
+        <Button Content="I Do Not Accept" Height="23" HorizontalAlignment="Right" Margin="0,354,83,0" Name="btnDecline" VerticalAlignment="Top" Width="101" Click="btnDecline_Click" />
+        <Button Content="I Accept" Height="23" HorizontalAlignment="Left" Margin="87,354,0,0" Name="btnAccept" VerticalAlignment="Top" Width="90" Click="button2_Click" />
+        <Label Content="Please confirm your acceptance of the licence agreement" Height="30" HorizontalAlignment="Left" Margin="7,13,0,0" Name="label1" VerticalAlignment="Top" Width="563" FontWeight="Bold" />
+    </Grid>
+</Window>

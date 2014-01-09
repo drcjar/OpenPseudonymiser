@@ -1,0 +1,28 @@
+﻿OpenPseudonymiser.CryptoLib 
+Version History
+
+------------------------------------------------------------------------------------------
+0.9.3
+13 Sept 2011
+Initial external release
+------------------------------------------------------------------------------------------
+0.9.4
+29 Sept 2011
+Banned the use of blank salt (both plain text and blank after PKI decryption)
+------------------------------------------------------------------------------------------
+0.9.5
+28 Oct 2011
+ - Changed NHS Number processessor to eliminate everything but ascii chars 0-9
+ - Columns get treated as NHSNUmbers (non asci removal) if the column name matches either "NHSNUMBER" or "NEWNHSNO" (case insensitive)
+ - Optionally validate NHSNumber (checksum) by using the new class NHSNumberValidation
+   Adapted from the NHSNumber validation by Peter Fisher (http://peterfisher.me.uk) 
+ - Added method that wraps the GetDigest call up for consumption by SQL-Server CLR UDFs
+------------------------------------------------------------------------------------------
+0.9.6
+26 Jan 2012
+All whitespace is now stripped from any field used in the creation of a Digest (space, newline, tab, carriage return)
+------------------------------------------------------------------------------------------
+0.9.7
+17 Sep 2012
+Wrapped the IDisposable objects in CryptoHelper with using
+------------------------------------------------------------------------------------------
